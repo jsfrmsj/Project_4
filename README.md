@@ -36,7 +36,9 @@ Additionally, the dataset includes information about each subject's caffeine and
 Additionally, our target variable Sleep Efficiency was also formatted in a way that the machine learning algorithms did not like, they were formatted as numerical values from 0.5 to .99. This proved to be problematic because the machine learning algorithms that we had learned to use preferred their target variables to be in a binary format, Yes or No. So, we decided to encode the Sleep efficiency into a binary, anything less than .74 would be inefficient and anything more than .75, including .75 itself, would be efficient. 
 
 **Sleep Efficiency**
+
 **Efficient** = .75 - .99
+
 **Inefficient** = .50 - .74
 
 All encoding was also done within the excel csv itself as this was the determined to be the quickest and most effective way to get this task done. 
@@ -49,6 +51,8 @@ All encoding was also done within the excel csv itself as this was the determine
 
 
 **Additional Data Cleaning** - Now that we had the new columns for the get dummies variables, we had to drop the redundant columns. The original 5 columns from the get dummies variables were dropped from the dataset. Additionally, it was decided that "output" variables in the dataset like REM sleep percentage, Deep Sleep percentage, Light Sleep percentage, Awakenings should be dropped so that the machine learning algorithm could focus on the 1 output factor that we wanted to study which was Sleep efficiency.
+
+While the Bedtime hour, Wakeup time, and sleep duration were considered output variables in the original study, we concluded that they could also be used as input variables for "lifestyle" habits and therefore kept them in our dataset.
 
 **Variable Correlation to Sleep Efficiency** - Once we had a fully cleaned and encoded dataset, we used python to calculate the amount that each variable was correlated with our target variable Sleep efficiency. The results showed that not a single variable was strongly correlated with sleep efficiency more than the minimum statistical threshold of 0.3. All except for 1, Alcohol consumption was negatively correlated at a statistically medium significance of -0.43. This means that the more drinks a person has, the worse their sleep efficiency will be.
 
