@@ -1,4 +1,4 @@
-# Project_4
+![image](https://github.com/jsfrmsj/Project_4/assets/121833972/4a4d4b37-1195-4312-ba2b-16895cabbd40)# Project_4
 
 Assignment - For this project we were tasked with using our machine learning skills to analyze, solve, or visualize a problem of our choice. Our team came across a dataset that was created by a research team from the University of Oxfordshire. Those researchers conducted a study to investigate the impact of lifestyle factors such as caffeine, alcohol, and exercise on sleep patterns and sleep quality. We wanted to see if we could use the dataset to see what impact those lifestyle factors had on sleep quality, and if we could use machine learning to be able to predict our own sleep quality based on our lifestyle factors.
 
@@ -16,14 +16,22 @@ Initial Cleaning of the Data - First we dropped the rows with null values, that 
 Encoding the Data - As we quickly learned, the machine learning algorithms did not respond well to the Bedtime Hour and Wakeup time columns as they were in the date / time format. So, we decided that it would be best to encode them into categories like "Normal", "Late", "Really Late" etcetera. The dataset made this easy for us as both variables were denoted in 30-minute indices. Additionally, both variables also had narrow timeframes, so we did not have to encode a lot of different categories for each variable.
 
 Bedtime Hours
+
 Normal – 9pm to 10:30pm
+
 Late – 11 pm to 12:30am
+
 Really Late – 1am – 2:30
 
+
 Wakeup Hours
+
 Very Early – 3am – 5am
+
 Early – 5:30am – 7:30am
+
 Normal – 8am-10am
+
 
 Additionally, our target variable Sleep Efficiency was also formatted in a way that the machine learning algorithms did not like, they were formatted as numerical values from 0.5 to .99. This proved to be problematic because the machine learning algorithms that we had learned to use preferred their target variables to be in a binary format, Yes or No. So, we decided to encode the Sleep efficiency into a binary, anything less than .74 would be inefficient and anything more than .75, including .75 itself, would be efficient. 
 
@@ -45,6 +53,36 @@ Additional Data Cleaning - Now that we had the new columns for the get dummies v
 Variable Correlation to Sleep Efficiency - Once we had a fully cleaned and encoded dataset, we used python to calculate the amount that each variable was correlated with our target variable Sleep efficiency. The results showed that not a single variable was strongly correlated with sleep efficiency more than the minimum statistical threshold of 0.3. All except for 1, Alcohol consumption was negatively correlated at a statistically medium significance of -0.43. This means that the more drinks a person has, the worse their sleep efficiency will be.
 
 However, it's also important to note that none of these variables that were denoted in the study are isolated. Being a smoker and exercising is not mutually exclusive. Neither is drinking and not exercising. When you look at the variables like that, it becomes obvious that the variables can be added up to be statistically significant. Therefore, the combination of lifestyle factors can determine one’s sleep efficiency. And when you look at the chart of correlations a clear pattern emerges, those that live a "healthy" lifestyle are more likely to have better sleep efficiency. Our machine learning algorithms were able to prove this.
+
+Exercise frequency            0.222205
+
+Non-Smoker                    0.17351
+
+Normal Wakeup                 0.097512
+
+Really Late Bedtime           0.085458
+
+Caffeine consumption          0.050481
+
+Very Early Wakeup             0.020278
+
+Late Wakeup                   0.011038
+
+Female                        0.008966
+
+Male               	         -0.008966
+
+Normal Bedtime        	     -0.018793
+
+Sleep duration       	       -0.02538
+
+Late Bedtime         	       -0.063758
+
+Early Wakeup         	       -0.11724
+
+Smoker         	             -0.17351
+
+Alcohol consumption   	     -0.434161
 
 
 Caveat - It is important to note that the quality of one’s sleep is dependent on a multitude of factors, some of which were not recorded in this study. For example, stress, or noise, or the current condition of your health.
