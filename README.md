@@ -1,4 +1,4 @@
-![image](https://github.com/jsfrmsj/Project_4/assets/121833972/4a4d4b37-1195-4312-ba2b-16895cabbd40)# Project_4
+# Project_4
 
 Assignment - For this project we were tasked with using our machine learning skills to analyze, solve, or visualize a problem of our choice. Our team came across a dataset that was created by a research team from the University of Oxfordshire. Those researchers conducted a study to investigate the impact of lifestyle factors such as caffeine, alcohol, and exercise on sleep patterns and sleep quality. We wanted to see if we could use the dataset to see what impact those lifestyle factors had on sleep quality, and if we could use machine learning to be able to predict our own sleep quality based on our lifestyle factors.
 
@@ -54,36 +54,7 @@ Variable Correlation to Sleep Efficiency - Once we had a fully cleaned and encod
 
 However, it's also important to note that none of these variables that were denoted in the study are isolated. Being a smoker and exercising is not mutually exclusive. Neither is drinking and not exercising. When you look at the variables like that, it becomes obvious that the variables can be added up to be statistically significant. Therefore, the combination of lifestyle factors can determine one’s sleep efficiency. And when you look at the chart of correlations a clear pattern emerges, those that live a "healthy" lifestyle are more likely to have better sleep efficiency. Our machine learning algorithms were able to prove this.
 
-Exercise frequency            0.222205
-
-Non-Smoker                    0.17351
-
-Normal Wakeup                 0.097512
-
-Really Late Bedtime           0.085458
-
-Caffeine consumption          0.050481
-
-Very Early Wakeup             0.020278
-
-Late Wakeup                   0.011038
-
-Female                        0.008966
-
-Male               	         -0.008966
-
-Normal Bedtime        	     -0.018793
-
-Sleep duration       	       -0.02538
-
-Late Bedtime         	       -0.063758
-
-Early Wakeup         	       -0.11724
-
-Smoker         	             -0.17351
-
-Alcohol consumption   	     -0.434161
-
+![image](https://github.com/jsfrmsj/Project_4/assets/121833972/4a4d4b37-1195-4312-ba2b-16895cabbd40)
 
 Caveat - It is important to note that the quality of one’s sleep is dependent on a multitude of factors, some of which were not recorded in this study. For example, stress, or noise, or the current condition of your health.
 
