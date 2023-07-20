@@ -64,7 +64,7 @@ However, it's also important to note that none of these variables that were deno
 
 **Machine Learning:**
 
-**KNN** - We started with the KNN machine learning model. Our first run after training and scaling the data yielded a very low accuracy score, somewhere in the 60% neighborhood. This was mostly due to our random_state variable being adjusted. We experimented with a lot of different numbers and ultimately settled on a random_state variable of 1 which stabilized our accuracy to above 70%. 
+**KNN** - We started with the KNN machine learning model. Our first run after training and scaling the data yielded a very low accuracy score, somewhere in the 60% neighborhood. This was mostly due to our random_state variable. We experimented with a lot of different numbers and ultimately settled on a random_state variable of 1 which stabilized our accuracy to above 70%. 
 Additionally, we experimented with dropping some of the more neutrally correlated variables like Gender and Age. When we dropped gender our accuracy score dropped significantly. So, we added that back in. However, when we dropped the Age variable our accuracy jumped up. 
 Unfortunately, with the KNN method we were only able to achieve an accuracy score of 74%.
 
