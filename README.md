@@ -12,6 +12,7 @@ Additionally, the dataset includes information about each subject's caffeine and
 
 **Initial Cleaning of the Data** - First we dropped the rows with null values, that was approximately 40 rows, bringing our dataset from 450 to roughly 400 participants. These null values were only in the self-reporting part of the dataset which were the Alcohol Consumption, Exercise Frequency, and Caffeine consumption columns. It is important to note that this was done within the excel csv itself because the dataset was small enough to make this the most time effective way to clean the data.
 
+**Creating SQL database** - Rodrigo
 
 **Encoding the Data** - As we quickly learned, the machine learning algorithms did not respond well to the Bedtime Hour and Wakeup time columns as they were in the date / time format. So, we decided that it would be best to encode them into categories like "Normal", "Late", "Really Late" etcetera. The dataset made this easy for us as both variables were denoted in 30-minute indices. Additionally, both variables also had narrow timeframes, so we did not have to encode a lot of different categories for each variable.
 
