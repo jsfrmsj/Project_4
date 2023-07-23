@@ -1,0 +1,6 @@
+﻿ID,Age,Gender,Bedtime Hour,Wakeup Time,Sleep duration,Sleep efficiency,REM sleep percentage,Deep sleep percentage,Light sleep percentage,Awakenings,Caffeine consumption,Alcohol consumption,Smoking status,Exercise frequency
+Jas,20,Male,Late Bedtime,Early Wakeup,7.5,Inefficient,,,,,25,2,Non-Smoker,2
+Marcy,20,Female,Really Late Bedtime,Early Wakeup,8,Efficient,,,,,25,0,Non-Smoker,0
+Marcela,20,Female,Late Bedtime,Early Wakeup,9,Inefficient,,,,,0,0,Non-Smoker,3
+Emanuel,20,Male,Normal Bedtime,Normal Wakeup,7,Efficient,,,,,100,0,Non-Smoker,3
+Rodrigo,20,Male,Normal Bedtime,Early Wakeup,8,Efficient,,,,,0,0,Non-Smoker,3
