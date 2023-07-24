@@ -7,5 +7,6 @@ and columns turned into numerical data types.
 
 We then used the correlation coefficient corr() method to determine the correlation coefficients.
 
-Afterward, we created a plot with r-squared values and lines of regression to be charted on the graphs for the targeted
-variables. We saved and exported the graphs as image files for later use in the project slide deck.
+Afterward, we created a plot with r-squared values and lines of regression to be charted on graphs for the targeted
+variables, as well as to be used to confirm the corr() correlation coefficients. We saved and exported the graphs as
+image files for later use in the project slide deck.
