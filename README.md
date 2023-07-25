@@ -69,7 +69,7 @@ However, it's also important to note that none of these variables that were deno
 Additionally, we experimented with dropping some of the more neutrally correlated variables like Gender and Age. When we dropped gender our accuracy score dropped significantly. So, we added that back in. However, when we dropped the Age variable our accuracy jumped up. 
 Unfortunately, with the KNN method we were only able to achieve an accuracy score of 74%.
 
-**Random Forest** – We then decided to use the Random Forest method of machine learning. This required us to use get dummies to encode our target variable “Sleep efficiency” from words (Efficient / Inefficient) to an integer (1/0). With that done we were able to get accuracy scores in the 75+ range. Again, it was the changing of the random_state variable that got us to 82%.
+**Random Forest** – We then decided to use the Random Forest method of machine learning. We choose this model type because Random Forest uses decision making trees to interpret the data. This matches with the dataset that we have which is based on lifestyle choices rather than a computational type of dataset. This required us to use get dummies to encode our target variable “Sleep efficiency” from words (Efficient / Inefficient) to an integer (1/0). With that done we were able to get accuracy scores in the 75+ range. Again, it was the changing of the random_state variable that got us to 82%.
 
 The target data was slightly lopsided, roughly 2/3rds are sleep efficient and the remaining 1/3rd is inefficient. Using class_weight parameter I was able to balance the target variable data and fine tune the accuracy to 84%.
 
